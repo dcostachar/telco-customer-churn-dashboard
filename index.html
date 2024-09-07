@@ -1,0 +1,368 @@
+<html>
+
+<head>
+  <title>Telco Customer Churn Dashboard: Visualizing Data for Retention Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  <script type="text/javascript"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .expanded-container {
+      width: 200%;
+      margin-left: -25%;
+      /* (150% - 100%) / 2 = 25% */
+      overflow-x: auto;
+    }
+
+    .image-container {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .insight-table {
+      margin-bottom: 2rem;
+    }
+
+    .insight-table h3 {
+      margin-bottom: 1rem;
+    }
+
+    .insight-table .table {
+      table-layout: fixed;
+    }
+
+    .insight-table .table th {
+      width: 50%;
+      background-color: #f8f9fa;
+    }
+
+    .insight-table .table td {
+      vertical-align: top;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mb-4">Telco Customer Churn Dashboard: Visualizing Data for Retention Solutions</h1>
+
+    <div class="expanded-container">
+      <div class="image-container">
+        <div id="vizContainer"></div>
+      </div>
+    </div>
+    <br />
+    <h2>Project Overview</h2>
+    <p>Reducing customer churn is essential for businesses, as retaining existing customers is more cost-effective than
+      acquiring new ones. By understanding the key drivers of churn, companies can develop strategies to improve
+      customer satisfaction, retention, and profitability.</p>
+    <p>Using the <a href="https://www.kaggle.com/datasets/blastchar/telco-customer-churn/data">Telco Customer Churn
+        dataset</a> (IBM sample data) from Kaggle, this project aims to build an interactive dashboard that provides a
+      clear view of the factors contributing to customer churn in the telecommunications industry. The insights gained
+      will enable businesses to make data-driven decisions that enhance retention efforts and reduce churn.</p>
+    <br />
+    <h2>Business Task</h2>
+    <p>Create a dashboard that helps decision-makers analyze churn patterns, understand the main causes of churn, and
+      identify at-risk customer segments. Based on the insights gained, produce actionable recommendations to inform
+      focused retention strategies and improve customer loyalty.</p>
+    <br />
+    <h2>Key Insights & Business Recommendations</h2>
+    <br />
+    <h3>Customer Account Information:</h3>
+    <br />
+    <div class="insight-table">
+      <h4>Tenure vs. Churn</h4>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Key Insights</th>
+              <th>Recommendations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>New customers (0-5 years of tenure) show the highest churn rates. Nearly half of these customers
+                    have
+                    churned.
+                  </li>
+                  <li>
+                    As tenure increases, churn rates drop significantly. Customers with more than 10 years of tenure
+                    are less likely to churn.
+                  </li>
+                  <li>
+                    Customers with 20+ years of tenure have much lower churn rates, indicating a strong retention trend
+                    among long-term customers.
+                  </li>
+                  <li>
+                    There is a slight rise in churn for customers in the 60-65 year range, which may warrant further
+                    investigation.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>Welcome offers and perks:</strong> During the first year, provide new customers with
+                    incentives such as discounts, bonus services, or upgrades to increase their perceived value and
+                    commitment to the company.</li>
+                  <li><strong>Personalized offers:</strong> Once customers are identified as at-risk, provide tailored
+                    offers (discounts, service upgrades, or exclusive deals) to re-engage them and show that the company
+                    values their loyalty.</li>
+                  <li><strong>Proactive customer support:</strong> Provide dedicated support in the early stages of the
+                    customer lifecycle. Frequent check-ins within the first few months can address issues before they
+                    lead
+                    to churn.</li>
+                  <li><strong>Surveys and feedback loops:</strong> Regularly collect feedback from newer customers to
+                    identify potential pain points early. Use this data to address common issues that may lead to
+                    dissatisfaction and churn.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="insight-table">
+      <h4>Contract Type vs. Churn</h4>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Key Insights</th>
+              <th>Recommendations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>Month-to-month contracts have the highest churn rate, with 1,655 out of 3,875 customers leaving.
+                  </li>
+                  <li>Customers with one-year contracts have significantly lower churn rates, with only 166 out of 1,473
+                    leaving. The lowest churn rate is seen in two-year contracts, where only 63 out of 1,710 customers
+                    churned, highlighting a strong retention trend associated with longer contracts.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>Offer discounts for longer contracts:</strong> Encourage customers to commit to 1- or
+                    2-year
+                    contracts with discounted rates or added features. This can help lock in customers and reduce the
+                    likelihood of churn within the early years.</li>
+                  <li><strong>Offer Transitional Plans:</strong> Provide an option for month-to-month customers to
+                    easily
+                    upgrade to a one- or two-year contract, potentially with trial periods or no-fee cancellations
+                    within
+                    the first few months, reducing friction and making the shift more attractive.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="insight-table">
+      <h4>Payment Method vs. Churn</h4>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Key Insights</th>
+              <th>Recommendations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>
+                    Customers using electronic cheques have the highest churn rate, significantly higher than other
+                    payment
+                    methods.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>Simplify and Improve Payment Experience:</strong> Ensure that all payment methods are easy
+                    to use and hassle-free. Address any common issues faced by cheque users, such as delays or
+                    processing
+                    problems, and offer convenient alternatives like digital wallets or automatic payments to enhance
+                    customer satisfaction and retention.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="insight-table">
+      <h4>Total Charges / Monthly Charges vs. Churn</h4>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Key Insights</th>
+              <th>Recommendations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>
+                    Customers with higher monthly charges (around $80 and above) who have been with the company for a
+                    shorter period (indicated by low total charges) show a higher concentration of churn. These are
+                    likely
+                    month-to-month customers, who tend to churn at higher rates, as indicated by the <strong>Contract
+                      Type vs.
+                      Churn</strong> visualization.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>Implement Gradual Pricing Increases to Reduce Early Churn:</strong> Keep initial costs low
+                    for new customers and gradually increase charges over time to recoup the return on investment (ROI).
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <h3>Customer Demographics:</h3>
+    <br />
+    <div class="insight-table">
+      <h4>Gender vs. Churn</h4>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Key Insights</th>
+              <th>Recommendations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>
+                    The number of male and female customers is almost evenly distributed.
+                  </li>
+                  <li>There does not appear to be a significant difference in churn rates based on gender.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>Focus on high-risk segments:</strong> Rather than creating gender-specific strategies, the
+                    company should prioritize its efforts on customer segments with higher churn, such as customers on
+                    month-to-month contracts or those with high monthly charges.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="insight-table">
+      <h4>Dependents vs. Churn</h4>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Key Insights</th>
+              <th>Recommendations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>
+                    Customers without dependents have a higher churn rate, with 1,543 churned customers out of 4,933
+                    total.
+                  </li>
+                  <li>
+                    Customers with dependents show a significantly lower churn rate, with only 326 churned customers out
+                    of
+                    2,110 total.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>Develop Family-Oriented Service Plans:</strong> To encourage more long-term commitments,
+                    consider introducing or promoting family-oriented service plans.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="insight-table">
+      <h3>Services Accessed by Customers:</h3>
+      <br />
+      <h4>Tech Support vs. Churn</h4>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Key Insights</th>
+              <th>Recommendations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>
+                    Customers without tech support have the highest churn rate, with 1,446 out of 3,473 customers
+                    churning.
+                  </li>
+                  <li>
+                    Customers with tech support have a much lower churn rate, with 310 out of 2,044 customers churning.
+              </td>
+              </li>
+              </ul>
+              <td>
+                <ul>
+                  <li><strong>Promote Tech Support Services:</strong> Given the significantly lower churn rate among
+                    customers with tech support, the business should actively promote and incentivize tech support
+                    packages. Offering these services, especially to customers currently without tech support, can
+                    improve
+                    retention rates by addressing potential technical issues before they lead to dissatisfaction.</li>
+                  <li><strong>Offer Free or Discounted Tech Support for High-Risk Customers:</strong> To target at-risk
+                    customers (those without tech support), consider offering limited-time free or discounted tech
+                    support
+                    as part of retention strategies. This can increase customer satisfaction, reduce technical issues,
+                    and
+                    lower churn.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
