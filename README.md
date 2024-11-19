@@ -31,76 +31,73 @@ Design a dashboard to:
 
 ## Customer Account Information
 
-### Tenure vs. Churn
+### Tenure vs. Churn                                                                                      
+- New customers (0-5 years of tenure) show the highest churn rates. Nearly half of these customers have churned.
+- As tenure increases, churn rates drop significantly. Customers with more than 10 years of tenure are less likely to churn.
+- Customers with 20+ years of tenure have much lower churn rates, indicating a strong retention trend among long-term customers.
+- There is a slight rise in churn for customers in the 60-65 year range, which may warrant further investigation.
 
-| **Insights**                                                                                         | **Recommendations**                                                                                                       |
-|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| New customers (0-5 years of tenure) show the highest churn rates. Nearly half of these customers churned. | **Welcome offers and perks:** Incentivize new customers with discounts, bonus services, or upgrades during the first year. |
-| As tenure increases, churn rates drop significantly. Customers with over 10 years are less likely to churn. | **Personalized offers:** Tailor discounts or exclusive deals for at-risk customers.                                       |
-| Customers with 20+ years of tenure have much lower churn rates.                                      | **Proactive customer support:** Provide dedicated support early in the customer lifecycle.                                |
-| A slight rise in churn is observed among customers in the 60-65 year range.                         | **Surveys and feedback loops:** Use surveys to identify potential pain points for new customers.                          |
+**Recommendations**
+- **Welcome offers and perks:** During the first year, provide new customers with incentives such as discounts, bonus services, or upgrades to increase their perceived value and commitment to the company.
+- **Personalized offers:** Once customers are identified as at-risk, provide tailored offers (discounts, service upgrades, or exclusive deals) to re-engage them and show that the company values their loyalty.
+- **Proactive customer support:** Provide dedicated support in the early stages of the customer lifecycle. Frequent check-ins within the first few months can address issues before they lead to churn.
+- **Surveys and feedback loops:** Regularly collect feedback from newer customers to identify potential pain points early. Use this data to address common issues that may lead to dissatisfaction and churn.
 
----
+### Contract Type vs. Churn                                                                      
+- Month-to-month contracts have the highest churn rate, with 1,655 out of 3,875 customers leaving.
+- Customers with one-year contracts have significantly lower churn rates, with only 166 out of 1,473 leaving. The lowest churn rate is seen in two-year contracts, where only 63 out of 1,710 customers churned, highlighting a strong retention trend associated with longer contracts.
 
-### Contract Type vs. Churn
+**Recommendations**
+- **Offer discounts for longer contracts:** Encourage customers to commit to 1- or 2-year contracts with discounted rates or added features. This can help lock in customers and reduce the likelihood of churn within the early years.
+- **Offer Transitional Plans:** Provide an option for month-to-month customers to easily upgrade to a one- or two-year contract, potentially with trial periods or no-fee cancellations within the first few months, reducing friction and making the shift more attractive.
+                                                                
+### Payment Method vs. Churn                                                                               
+- Customers using electronic cheques have the highest churn rate, significantly higher than other payment methods.
 
-| **Insights**                                                                         | **Recommendations**                                                                                           |
-|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Month-to-month contracts have the highest churn rate.                                | **Offer discounts for longer contracts:** Encourage 1- or 2-year contracts with discounts or added features. |
-| One-year contracts have significantly lower churn rates than month-to-month plans.   | **Offer transitional plans:** Allow easy upgrades to longer contracts with trial periods or no-fee cancellations. |
-| Two-year contracts have the lowest churn rates.                                      | **Lock-in incentives:** Offer perks to encourage longer commitments.                                        |
+**Recommendations**
+- **Simplify and Improve Payment Experience:** Ensure that all payment methods are easy to use and hassle-free. Address any common issues faced by cheque users, such as delays or processing problems, and offer convenient alternatives like digital wallets or automatic payments to enhance customer satisfaction and retention.|
 
----
+### Total Charges / Monthly Charges vs. Churn                                                                                  
+- Customers with higher monthly charges (around $80 and above) who have been with the company for a shorter period (indicated by low total charges) show a higher concentration of churn. These are likely month-to-month customers, who tend to churn at higher rates, as indicated by the Contract Type vs. Churn visualization.
 
-### Payment Method vs. Churn
+**Recommendations**             
+- **Implement Gradual Pricing Increases to Reduce Early Churn:** Keep initial costs low for new customers and gradually increase charges over time to recoup the return on investment (ROI).
 
-| **Insights**                                                                                     | **Recommendations**                                                                                             |
-|--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Customers using electronic cheques have the highest churn rate, significantly higher than others. | **Simplify payment experience:** Offer digital wallets or auto-pay to improve satisfaction with payment processes. |
+<br /> 
 
----
+## Customer Demographics 
 
-## Customer Demographics
+### Senior Citizen vs. Churn  
+- Senior citizens have a higher churn rate than non-seniors.
 
-### Senior Citizen vs. Churn
+**Recommendations**     
+- **Dedicated support:** Offer tailored services and resources to address senior-specific needs.
 
-| **Insights**                     | **Recommendations**                                                                           |
-|----------------------------------|----------------------------------------------------------------------------------------------|
-| Senior citizens have a higher churn rate compared to non-seniors. | **Dedicated support:** Offer tailored services and resources to address senior-specific needs. |
+### Gender vs. Churn                             
+- The number of male and female customers is almost evenly distributed.
+- There does not appear to be a significant difference in churn rates based on gender.
 
----
+**Recommendations**                                                                                          
+- **Focus on high-risk segments:** Rather than creating gender-specific strategies, the company should prioritize its efforts on customer segments with higher churn, such as customers on month-to-month contracts or those with high monthly charges.
 
-### Partner vs. Churn
+### Dependents vs. Churn    
+- Customers without dependents have a higher churn rate, with 1,543 churned customers out of 4,933 total.
+- Customers with dependents show a significantly lower churn rate, with only 326 churned customers out of 2,110 total.
 
-| **Insights**                                   | **Recommendations**                                                                                          |
-|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Customers without partners have a higher churn rate. | **Community-building initiatives:** Create programs that foster a sense of belonging to reduce churn.          |
+**Recommendations**                                                                                          
+- **Develop Family-Oriented Service Plans:** To encourage more long-term commitments, consider introducing or promoting family-oriented service plans.
 
----
+<br /> 
 
-### Dependents vs. Churn
+## Services Subscribed 
 
-| **Insights**                                   | **Recommendations**                                                                                          |
-|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Customers without dependents have a higher churn rate. | **Family-oriented promotions:** Offer promotions or services attractive to customers with dependents.          |
+### Tech Support vs. Churn                 
+- Customers without tech support have the highest churn rate, with 1,446 out of 3,473 customers churning.
+- Customers with tech support have a much lower churn rate, with 310 out of 2,044 customers churning.
 
----
-
-## Services Subscribed
-
-### Phone Service vs. Churn
-
-| **Insights**                     | **Recommendations**                                                                                 |
-|----------------------------------|----------------------------------------------------------------------------------------------------|
-| Customers without phone service have a higher churn rate. | **Bundled offerings:** Promote bundled packages with discounted rates to encourage phone service adoption. |
-
----
-
-### Internet Service vs. Churn
-
-| **Insights**                     | **Recommendations**                                                                             |
-|----------------------------------|------------------------------------------------------------------------------------------------|
-| Customers without internet service have a higher churn rate. | **Promote internet service:** Highlight the benefits and affordability of adding internet services. |
+**Recommendations**
+- **Promote Tech Support Services:** Given the significantly lower churn rate among customers with tech support, the business should actively promote and incentivize tech support packages. Offering these services, especially to customers currently without tech support, can improve retention rates by addressing potential technical issues before they lead to dissatisfaction.
+- **Offer Free or Discounted Tech Support for High-Risk Customers:** To target at-risk customers (those without tech support), consider offering limited-time free or discounted tech support as part of retention strategies. This can increase customer satisfaction, reduce technical issues, and lower churn.
 
 </details>
 
