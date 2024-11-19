@@ -29,7 +29,9 @@ Design a dashboard to:
 <details>
   <summary>Reporting the results of the analysis and providing recommendations to address the business problem.</summary>
 
-## Customer Account Information
+<br />
+
+<details> <summary><strong>Customer Account Information</strong></summary>
 
 ### Tenure vs. Churn                                                                                      
 - New customers (0-5 years of tenure) show the highest churn rates. Nearly half of these customers have churned.
@@ -55,7 +57,7 @@ Design a dashboard to:
 - Customers using electronic cheques have the highest churn rate, significantly higher than other payment methods.
 
 **Recommendations**
-- **Simplify and Improve Payment Experience:** Ensure that all payment methods are easy to use and hassle-free. Address any common issues faced by cheque users, such as delays or processing problems, and offer convenient alternatives like digital wallets or automatic payments to enhance customer satisfaction and retention.|
+- **Simplify and Improve Payment Experience:** Ensure that all payment methods are easy to use and hassle-free. Address any common issues faced by cheque users, such as delays or processing problems, and offer convenient alternatives like digital wallets or automatic payments to enhance customer satisfaction and retention.
 
 ### Total Charges / Monthly Charges vs. Churn                                                                                  
 - Customers with higher monthly charges (around $80 and above) who have been with the company for a shorter period (indicated by low total charges) show a higher concentration of churn. These are likely month-to-month customers, who tend to churn at higher rates, as indicated by the Contract Type vs. Churn visualization.
@@ -63,9 +65,9 @@ Design a dashboard to:
 **Recommendations**             
 - **Implement Gradual Pricing Increases to Reduce Early Churn:** Keep initial costs low for new customers and gradually increase charges over time to recoup the return on investment (ROI).
 
-<br /> 
+</details>
 
-## Customer Demographics 
+<details> <summary><strong>Customer Demographics</strong></summary>
 
 ### Senior Citizen vs. Churn  
 - Senior citizens have a higher churn rate than non-seniors.
@@ -87,9 +89,9 @@ Design a dashboard to:
 **Recommendations**                                                                                          
 - **Develop Family-Oriented Service Plans:** To encourage more long-term commitments, consider introducing or promoting family-oriented service plans.
 
-<br /> 
+</details>
 
-## Services Subscribed 
+<details> <summary><strong>Services Subscribed</strong></summary>
 
 ### Tech Support vs. Churn                 
 - Customers without tech support have the highest churn rate, with 1,446 out of 3,473 customers churning.
