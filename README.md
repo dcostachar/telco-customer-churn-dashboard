@@ -1,4 +1,4 @@
-# Telco Customer Churn Dashboard: Visualizing Data for Retention Solutions
+# Visualizing Data for Retention Solutions: Telco Customer Churn Dashboard
 
 Author: Charlene D'Costa <br />
 Date: September 3, 2024 <br />
