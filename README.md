@@ -5,7 +5,7 @@ Date: September 3, 2024 <br />
 Coursework for the Analyst Builder: Tableau for Data Visualization course. <br />
 
 [Tableau Dashboard](https://public.tableau.com/app/profile/charlene.d.costa/viz/TelcoCustomerChurnDashboard_17256470761000/TelcoCustomerChurnDashboard) <br />
-[Telco Customer Churn Datasets](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+[Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 # Project Overview
 
