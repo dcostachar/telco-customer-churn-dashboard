@@ -18,9 +18,9 @@ For this project, I used the [Telco Customer Churn dataset](https://www.kaggle.c
 **Business Task:** 
 
 Design a dashboard to: 
-- Analyze churn patterns and identify key drivers of customer churn
-- Identify at-risk customer segments for targeted interventions
-- Produce actionable recommendations to inform focused retention strategies and improve customer loyalty
+- Analyze churn patterns and identify key drivers of customer churn.
+- Identify at-risk customer segments for targeted interventions.
+- Produce actionable recommendations to inform focused retention strategies and improve customer loyalty.
 
 </details>
 
